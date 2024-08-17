@@ -1,0 +1,83 @@
+.article-board {
+    /* width: 60vw;
+    height: 3rem; */
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    
+}
+
+
+.ariticle-board-container {
+    border: 1px solid black;
+
+    background-image: url('../assets/nine-man-9.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 85%;
+}
+
+.section-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    height: 100vh;
+    margin: 0 1rem 0 1rem;
+}
+
+.section-board > * {
+    max-height: 25rem; /* Set the maximum height for the flex items */
+}
+
+.main-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Board drop */
+
+.download-button {
+    margin-bottom: 10px;
+}
+
+.file-drop-area {
+    width: 300px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.file-drop-content {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+}
+
+.file-drop-area:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.file-drop-area:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.csv-article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width: 850px) {
+    .main-game {
+      flex-direction: column; 
+    }
+}
